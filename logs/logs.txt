@@ -1,0 +1,70 @@
+2025-07-25T12:21:14.042-0600 [INFO]  Terraform version: 1.12.2
+2025-07-25T12:21:14.042-0600 [INFO]  Go runtime version: go1.24.2
+2025-07-25T12:21:14.042-0600 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-07-25T12:21:14.043-0600 [INFO]  CLI command args: []string{"plan"}
+2025-07-25T12:21:14.506-0600 [INFO]  backend/local: starting Plan operation
+2025-07-25T12:21:14.508-0600 [INFO]  provider: configuring client automatic mTLS
+2025-07-25T12:21:14.630-0600 [INFO]  provider.terraform-provider-aws_v6.2.0_x5: configuring server automatic mTLS: timestamp=2025-07-25T12:21:14.629-0600
+2025-07-25T12:21:15.769-0600 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.2.0/linux_amd64/terraform-provider-aws_v6.2.0_x5 id=105702
+2025-07-25T12:21:15.772-0600 [INFO]  provider: configuring client automatic mTLS
+2025-07-25T12:21:15.953-0600 [INFO]  provider.terraform-provider-aws_v6.2.0_x5: configuring server automatic mTLS: timestamp=2025-07-25T12:21:15.953-0600
+2025-07-25T12:21:16.053-0600 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.2.0/linux_amd64/terraform-provider-aws_v6.2.0_x5 id=105736
+2025-07-25T12:21:16.053-0600 [INFO]  backend/local: plan calling Plan
+2025-07-25T12:21:16.055-0600 [INFO]  provider: configuring client automatic mTLS
+2025-07-25T12:21:16.169-0600 [INFO]  provider.terraform-provider-aws_v6.2.0_x5: configuring server automatic mTLS: timestamp=2025-07-25T12:21:16.168-0600
+2025-07-25T12:21:16.252-0600 [INFO]  provider.terraform-provider-aws_v6.2.0_x5: Retrieved credentials: @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_aws.credentials_source="SharedConfigCredentials: /home/saul-tzakum/.aws/credentials" tf_req_id=24fa26d5-8c51-e1a4-f214-2445bb15e28b tf_rpc=ConfigureProvider timestamp=2025-07-25T12:21:16.252-0600
+2025-07-25T12:21:16.542-0600 [INFO]  provider.terraform-provider-aws_v6.2.0_x5: Retrieved caller identity from STS: tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=24fa26d5-8c51-e1a4-f214-2445bb15e28b timestamp=2025-07-25T12:21:16.542-0600
+2025-07-25T12:21:17.576-0600 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_vpc.vpc_virginia, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .ipv6_ipam_pool_id: planned value cty.StringVal("") for a non-computed attribute
+      - .ipv6_netmask_length: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .instance_tenancy: planned value cty.StringVal("default") for a non-computed attribute
+      - .assign_generated_ipv6_cidr_block: planned value cty.False for a non-computed attribute
+      - .enable_dns_support: planned value cty.True for a non-computed attribute
+2025-07-25T12:21:17.691-0600 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_subnet.public_subnet, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_lni_at_device_index: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .outpost_arn: planned value cty.StringVal("") for a non-computed attribute
+      - .enable_resource_name_dns_a_record_on_launch: planned value cty.False for a non-computed attribute
+      - .enable_resource_name_dns_aaaa_record_on_launch: planned value cty.False for a non-computed attribute
+      - .customer_owned_ipv4_pool: planned value cty.StringVal("") for a non-computed attribute
+      - .enable_dns64: planned value cty.False for a non-computed attribute
+      - .ipv6_cidr_block: planned value cty.StringVal("") for a non-computed attribute
+      - .ipv6_native: planned value cty.False for a non-computed attribute
+      - .map_customer_owned_ip_on_launch: planned value cty.False for a non-computed attribute
+      - .assign_ipv6_address_on_creation: planned value cty.False for a non-computed attribute
+2025-07-25T12:21:17.800-0600 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_security_group.sg_public_instance, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+2025-07-25T12:21:17.906-0600 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_subnet.private_subnet, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .enable_resource_name_dns_a_record_on_launch: planned value cty.False for a non-computed attribute
+      - .enable_resource_name_dns_aaaa_record_on_launch: planned value cty.False for a non-computed attribute
+      - .map_public_ip_on_launch: planned value cty.False for a non-computed attribute
+      - .customer_owned_ipv4_pool: planned value cty.StringVal("") for a non-computed attribute
+      - .enable_dns64: planned value cty.False for a non-computed attribute
+      - .ipv6_cidr_block: planned value cty.StringVal("") for a non-computed attribute
+      - .ipv6_native: planned value cty.False for a non-computed attribute
+      - .map_customer_owned_ip_on_launch: planned value cty.False for a non-computed attribute
+      - .assign_ipv6_address_on_creation: planned value cty.False for a non-computed attribute
+      - .enable_lni_at_device_index: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .outpost_arn: planned value cty.StringVal("") for a non-computed attribute
+2025-07-25T12:21:18.032-0600 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_route_table_association.a, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .gateway_id: planned value cty.StringVal("") for a non-computed attribute
+2025-07-25T12:21:19.906-0600 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_instance.public_instance, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .user_data_replace_on_change: planned value cty.False for a non-computed attribute
+      - .hibernation: planned value cty.False for a non-computed attribute
+      - .source_dest_check: planned value cty.True for a non-computed attribute
+      - .get_password_data: planned value cty.False for a non-computed attribute
+      - .metadata_options: block count in plan (1) disagrees with count in config (0)
+      - .private_dns_name_options: block count in plan (1) disagrees with count in config (0)
+      - .root_block_device: block count in plan (1) disagrees with count in config (0)
+      - .capacity_reservation_specification: block count in plan (1) disagrees with count in config (0)
+      - .cpu_options: block count in plan (1) disagrees with count in config (0)
+      - .credit_specification: block count in plan (1) disagrees with count in config (0)
+      - .maintenance_options: block count in plan (1) disagrees with count in config (0)
+      - .enclave_options: block count in plan (1) disagrees with count in config (0)
+2025-07-25T12:21:19.918-0600 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.2.0/linux_amd64/terraform-provider-aws_v6.2.0_x5 id=105757
+2025-07-25T12:21:19.920-0600 [INFO]  backend/local: plan operation completed

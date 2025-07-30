@@ -1,0 +1,10 @@
+.git
+datos_instance.txt
+datos_instance_destroyed.txt
+terraform.tfstate
+terraform.tfstate*
+terraform.tfstate.backup
+.terraform.lock.hcl
+.terraform/
+delsameday.pem
+my_key.pem
