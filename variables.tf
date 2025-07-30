@@ -66,3 +66,7 @@ variable "ingress_rules" {
     name        = string
   }))
 }
+
+variable "access_key" {}
+
+variable "secret_key" {}
